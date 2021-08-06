@@ -171,7 +171,7 @@ CONTAINER MYSQL SENDO ACESSADO POR SPRINGBOOT LOCAL
 mysql --->
 sudo docker pull mysql/mysql-server:latest
 
-docker run  --publish 6603:3306 --network mysql-network  --detach --name=mysql-docker -e MYSQL_ROOT_PASSWORD=adm -e MY_DATABASE=starbucks  -e MY_USER=root --volume=/root/docker/mysql-standalone/conf.d:/etc/mysql/conf.d mysql
+docker run  --publish 6603:3306 --network mysql-network  --detach --name=mysql-docker -e MYSQL_ROOT_PASSWORD=adm -e MY_USER=root --volume=/root/docker/mysql-standalone/conf.d:/etc/mysql/conf.d mysql
 
 sudo docker exec -it mysql-docker bash
 

@@ -6,7 +6,7 @@ docker run dockersamples/static-site
 - Containers que estão sendo executados no momento
 docker ps
 
-- Para ver todos containers, inclusive os paradosa
+- Para ver todos containers, inclusive os parados
 docker ps -a ou docker ps --all
 
 - Quando executamos o container do Ubuntu, precisamos passar para ele um comando que rode dentro dele, por exemplo:
